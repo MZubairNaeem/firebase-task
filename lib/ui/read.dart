@@ -15,6 +15,7 @@ class _ReadState extends State<Read> {
 
   //get docsID
   Future getDocID() async {
+
     await FirebaseFirestore.instance
         .collection('users')
         .get()

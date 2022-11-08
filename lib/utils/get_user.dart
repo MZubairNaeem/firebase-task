@@ -22,7 +22,7 @@ class GetUser extends StatelessWidget {
             '${data['firstname']}' + ', ' +
                 '${data['dept']}' + ', ' + '${data['semester']}' + 'th' + ' Semester');
       }
-      return Text("Loding...");
+      return Center(child: CircularProgressIndicator());
     }),
     );
   }
